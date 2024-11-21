@@ -1,0 +1,30 @@
+graph LR
+    A[User Interfaces] --> B(Web Application)
+    A --> C(Mobile Apps)
+    B --> D{API Gateway}
+    C --> D
+    D --> E[Authentication & Authorization]
+    E --> F[School Management System]
+    E --> G[Learning Management System]
+    F --> H[Student Information System]
+    F --> I[Fee Management]
+    F --> J[Attendance Management]  
+    F --> K[Exam Management]
+    F --> L[Library Management]
+    F --> M[Inventory Management]
+    F --> N[HR Management]
+    F --> O[Reporting & Analytics]
+    G --> P[Content Management]
+    G --> Q[Course Management] 
+    G --> R[Virtual Classroom]
+    G --> S[Assessment & Grading]
+    G --> T[Discussion Forums]
+    G --> U[Learning Analytics]
+    V[(SQL DB)]
+    W[(NoSQL DB)]
+    X[(Object Storage)]
+    F --- V
+    G --- V
+    F --- W
+    G --- W
+    P --- X
